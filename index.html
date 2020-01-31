@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/fontawesome-free-5.12.0-web/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora|Sigmar+One&display=swap" rel="stylesheet">
+<title>Document</title>
+</head>
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand LogoText" href="#">Meduza</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Новости<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Истории</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Разбор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Игры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Шапито</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Подкасты</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary mx-2" id="toggle-theme"><i class="far fa-lightbulb"></i></button>
+                <button type="button" class="btn btn-primary" id="toggle-see"><i class="fas fa-glasses"></i></button>                
+                <form class="form-inline my-2 my-lg-0 mx-1">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Поиск</button>
+                  </form>
+            </div>
+        </nav>              
+    </header>
+    <section>
+        <div class="row mx-auto">
+            <div class="col-xl-12 my-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-light" id="banner">
+                                        <h5 class="card-title">
+                                            Обвиняемых по делу Ивана Голунова полицейских арестовали. Из пятерых один частично признал вину
+                                        </h5>
+                                        <h6 class="card-subtitle text-muted " id="banner">
+                                            Час назад
+                                        </h6>
+                                    </button>                                    
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-light" id="banner">
+                                        <p class="card-text">Путин решил платить Медведеву за работу в Совбезе 618 тысяч рублей</p>
+                                        <h6 class="card-subtitle text-muted " id="banner">
+                                            3 часа назад
+                                        </h6>
+                                    </button>
+                                    <button type="button" class="btn btn-light" id="banner">
+                                        <p class="card-text">Британская Guardian ради экологии отказалась рекламировать нефтяные компании</p>
+                                        <h6 class="card-subtitle text-muted " id="banner">
+                                            14 минут назад
+                                        </h6>
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="col-xl-4 my-2">
+                <div class="card" style="width: 26rem;">
+                    <img src="https://meduza.io/impro/Jela00H0KG2AYvLvk10hqQJsvy0N0i0klWp0jHsD1VY/fill/650/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNC85/MzAvNjA4L29yaWdp/bmFsLzU2dXlJdFN3/ZndSYWZOQnNpQm9N/akEuanBn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Истории</h6>
+                      <p class="card-text">Жена главы ВТБ Андрея Костина владеет 500-метровой квартирой в центре Москвы — стоимостью больше миллиарда рублей: «Открытые медиа»</p>
+                      <a href="#" class="btn btn-primary">Статья</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 my-2">
+                <div class="card" style="width: 26rem;">
+                    <img src="https://meduza.io/impro/J9pDz34RvDGpHK3Mnv5CUCvu-E13SSda6kQTqPiHKZg/fill/650/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNC85/MjgvNDI1L29yaWdp/bmFsLzdxXzZON3hI/bEF5RnFNQl9SMTln/RmcuanBn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Истории</h6>
+                      <p class="card-text">Китайские чиновники утаили часть информации о коронавирусе. Возможно, они гораздо раньше знали, насколько он опасен </p>
+                      <a href="#" class="btn btn-primary">Статья</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 my-2">
+                <div class="card" style="width: 26rem;">
+                    <img src="https://meduza.io/impro/3Q0cu1eIjkv0igiNGKxxUOzaHUAfTErt6tzLZecmsxU/fill/980/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNC85/MzAvMDU5L29yaWdp/bmFsL1o1Rmc3R3V4/ZnJ5d09MelFsVXBl/NFEuanBn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Истории</h6>
+                      <p class="card-text">«1917» Сэма Мендеса — виртуозно снятая драма о Первой мировой, во время которой трудно перевести дух</p>
+                      <a href="#" class="btn btn-primary">Статья</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="col-xl-4 my-2">
+                <div class="card" style="width: 26rem;">
+                    <img src="https://meduza.io/impro/8xD9ZwXVJIVi0RtG6XM-NxCVNPQdIgEP6HFyyhFyyTY/fill/980/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNC85/MzAvNDI1L29yaWdp/bmFsL0lyTkxqM3pi/aGE1dDRfS1puXzBx/T0EuanBn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Новости</h6>
+                      <p class="card-text">Арестован бывший полицейский Роман Феофанов, обвиняемый в фальсификации дела Ивана Голунова. Фотография</p>
+                      <a href="#" class="btn btn-primary">Статья</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 my-2">
+                <div class="card" style="width: 26rem;">
+                    <img src="https://meduza.io/impro/rHhsVbKRHDa4f3SD8pO_NiwdmX1deyS1Xy9V-cmkWn8/fill/650/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNC85/MjkvNzA2L29yaWdp/bmFsL1Z6aEZiejM4/ZWJIS0VyWUpEMTkz/cFEuanBn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Новости</h6>
+                      <p class="card-text">Японский миллиардер отменил реалити-шоу, на котором собирался найти спутницу для путешествия к Луне. Он полетит туда один</p>
+                      <a href="#" class="btn btn-primary">Статья</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 my-2">
+                <div class="card" style="width: 26rem;">
+                    <img src="https://meduza.io/impro/rUKmKXxVC-pRfkz0b38vRdVFaFxYn3kGgTv21v7ICpM/fill/650/0/ce/1/aHR0cHM6Ly9tZWR1/emEuaW8vaW1hZ2Uv/YXR0YWNobWVudHMv/aW1hZ2VzLzAwNC85/MzAvMTM0L29yaWdp/bmFsL0d2VUMwekVk/VHFBSVJmUkdpTG5n/VkEuanBn.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Шапито</h6>
+                      <p class="card-text">Хотите испортить себе жизнь? Установите на компьютер виртуального гуся — он гогочет, охотится на курсор и захламляет все мемами</p>
+                      <a href="#" class="btn btn-primary">Статья</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-1">
+                <div class="scrollup">
+                    <i class="fa fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container"> 
+            <div class="row  mx-auto">
+                <div class="col-5"></div>
+                <div class="col-3">
+                    <span>© 2020 Meduza</span>
+                    <button type="button" class="btn btn-link">О проекте</button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+<script>
+    const toggleBtn = document.querySelector("#toggle-theme");
+toggleBtn.addEventListener("click", function() {
+    if(document.documentElement.hasAttribute("theme")){
+        document.documentElement.removeAttribute("theme");
+    }
+    else{
+        document.documentElement.setAttribute("theme", "dark");
+    }
+});
+</script>
+<script>
+    const togleBtn = document.querySelector("#toggle-see");
+togleBtn.addEventListener("click", function() {
+    if(document.documentElement.hasAttribute("see")){
+        document.documentElement.removeAttribute("see");
+    }
+    else{
+        document.documentElement.setAttribute("see", "NeVidno");
+    }
+});
+</script>
+<script>
+    $(function() {
+      // при нажатии на кнопку scrollup
+      $('.scrollup').click(function() {
+        // переместиться в верхнюю часть страницы
+        $("html, body").animate({
+          scrollTop:0
+        },1000);
+      })
+    })
+    // при прокрутке окна (window)
+    $(window).scroll(function() {
+      // если пользователь прокрутил страницу более чем на 200px
+      if ($(this).scrollTop()>10) {
+        // то сделать кнопку scrollup видимой
+        $('.scrollup').fadeIn();
+      }
+      // иначе скрыть кнопку scrollup
+      else {
+        $('.scrollup').fadeOut();
+      }
+    });
+</script>
+<script>
+    $(window).on('load', function () {
+      $('body').addClass('loaded_hiding');
+      window.setTimeout(function () {
+        $('body').addClass('loaded');
+        $('body').removeClass('loaded_hiding');
+      }, 5000);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+.LogoText {
+    font-family: 'Sigmar One', cursive;
+    font-size: 14px;
+}
+
+div.scrollup {
+    position: fixed; /* фиксированная позиция */
+    color: #fff; /* цвет текста */
+    background-color: #286090; /* цвет заднего фона */
+    right: 20px; /* расстояние от правого края */
+    bottom: 0px; /* расстояние от нижнего края */
+    padding: 4px 10px; /* отступы до содержимого блока */
+    font-size: 20px; /* размер шрифта (иконки) */
+    border-top-left-radius: 4px; /* скругление верхнего левого угла */
+    border-top-right-radius: 4px; /* скругление верхнего правого угла */
+    cursor: pointer; /* форма курсора */
+    display: none; /* не отображать элемент */
+    text-align: center; /*выравнивание содержимого элемента по центру */
+}
+div.scrollup:hover {
+    background-color: #000; /* цвет заднего фона при наведении */
+}
+  
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #e0e0e0;
+    z-index: 1001;
+}
+  
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+  
+@keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+.loaded_hiding .preloader {
+    transition: 5s opacity;
+    opacity: 0;
+}
+  
+.loaded .preloader {
+    display: none;
+}
+
+#banner {
+      text-align: left;
+}
+
+.btn-1 {
+      height: 40px;
+      width: 40px;
+}
+
+:root {
+    --panel-bg-color: #ffffff;
+    --container-bg-color: #ffffff;
+    --text-color: #2f3542;
+
+}
+:root[theme='dark'] {
+    --panel-bg-color: #2f3542;
+    --container-bg-color: #2f3542;
+    --text-color: #ced6e0;
+}
+:root[see='NeVidno'] {
+    --font-size:25px;   
+}
+
+* {
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    color: var(--text-color);
+    background: var(--panel-bg-color);
+}
+header{
+    background: var(--panel-bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+section{
+    background: var(--panel-bg-color);
+    color: var(--text-color);
+}
+.card-body{
+    background: var(--panel-bg-color);
+    color: var(--text-color);  
+    font-size: var(--font-size);     
+}
+footer{
+    background: var(--panel-bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+}
+input[type=button] {
+    color: var(--text-color);
+    background: var(--panel-bg-color);
+    font-size: var(--font-size); 
+}
+#banner{
+    background: var(--panel-bg-color);
+    color: var(--text-color); 
+    font-size: var(--font-size);
+}
+
+.card-title{
+    font-size: var(--font-size);
+}
